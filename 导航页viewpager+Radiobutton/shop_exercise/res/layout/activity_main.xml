@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.shop_execise.view.MyViewpager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <RadioGroup 
+        android:id="@+id/bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#FF4500"
+        >
+        <RadioButton 
+            android:id="@+id/btn_one"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Home"
+            android:checked="true"
+            />
+        <RadioButton 
+            android:id="@+id/btn_two"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Mes"
+            />
+        <RadioButton 
+            android:id="@+id/btn_three"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Friend"
+            />
+        <RadioButton 
+            android:id="@+id/btn_four"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Set"
+            />
+    </RadioGroup>
+    
+
+</RelativeLayout>
