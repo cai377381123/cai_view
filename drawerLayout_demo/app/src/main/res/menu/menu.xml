@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/toolbar_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="delete"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item android:id="@+id/toolbar_grade"
+        android:title="grade"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_grade"
+        />
+    <item android:id="@+id/toolbar_info"
+        android:title="info"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_info"
+        />
+
+</menu>
