@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="说明：数据校准操作是抬吊作业安全监测的关键。请严格按照操作说明进行操作。"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示信息"/>
+    <TextView
+        android:id="@+id/data_jz_tishi_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在进行数据校准，请稍候……"/>
+
+</LinearLayout>

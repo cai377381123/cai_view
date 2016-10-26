@@ -1,0 +1,520 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.nuc.csce.dcldims.fragment.Home_setting"
+    android:orientation="vertical"
+    android:background="#F0F3F6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--抬吊作业参数设置及监测数据文件 -->
+       <LinearLayout style="@style/wrap_layout" >
+         <LinearLayout style="@style/top_layout">
+            <TextView
+                style="@style/biaotitext"
+                android:text="@string/tdt_setafile" />
+         </LinearLayout>
+        <View style="@style/bg_line"/>
+           <LinearLayout
+               android:id="@+id/btn_shouquan"
+               style="@style/mid_layout"
+               android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                android:text="@string/cs_accredit" />
+               <TextView
+                   android:id="@+id/state_shouquan"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:textSize="13sp"
+                   android:layout_marginRight="5dp"
+                   android:text="@string/weishouquan"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_files_listview"
+            style="@style/bottom_layout"
+            android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                android:text="@string/nowfile" />
+           <TextView
+               style="@style/right_layout"
+               android:id="@+id/files_listview"
+               android:text="@string/nowfilename"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+ <!--抬吊作业基本信息 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+        <LinearLayout style="@style/top_layout">
+            <TextView
+                style="@style/biaotitext"
+                android:text="@string/tdt_info" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_pg_name"
+            style="@style/mid_layout"
+            >
+            <TextView style="@style/usertext"
+                android:text="@string/pjname" />
+            <TextView
+                android:id="@+id/pg_name"
+                android:maxLength="20"
+                style="@style/right_layout"
+                android:text="同煤集团"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_dopeople_name"
+                android:layout_width="match_parent"
+                style="@style/mid_layout">
+                <TextView
+                    style="@style/usertext"
+                    android:text="@string/dopeople"/>
+                <TextView
+                    android:id="@+id/dopeople_name"
+                   style="@style/right_layout"
+                    android:text="王经理"/>
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View
+                style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_shoupeople_name"
+                style="@style/mid_layout">
+                <TextView
+                    style="@style/usertext"
+                    android:text="@string/shoupeople"/>
+                <TextView
+                    android:id="@+id/shoupeople_name"
+                    style="@style/right_layout"
+                    android:text="刘总"/>
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+
+        <View
+            style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_hoistcase_state"
+            style="@style/mid_layout">
+            <TextView style="@style/usertext"
+                android:text="@string/hoistcase" />
+            <TextView
+                android:id="@+id/hoistcase_state"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/doublehoist"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_allmonitor_state"
+            style="@style/mid_layout">
+            <TextView style="@style/usertext"
+                android:text="@string/safemonitor" />
+            <TextView
+                android:id="@+id/allmonitor_state"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/allmonitor"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_frequency_state"
+            style="@style/bottom_layout">
+            <TextView style="@style/usertext"
+                android:text="@string/frequencymonitor" />
+            <TextView
+                android:id="@+id/frequency_state"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/frequency"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 无线传输控制器的安装与调试 -->
+
+         </LinearLayout>
+            <LinearLayout style="@style/wrap_layout" >
+              <LinearLayout style="@style/top_layout">
+             <TextView style="@style/biaotitext"
+                android:text="@string/wxcs_azts" />
+           </LinearLayout>
+           <View style="@style/bg_line"/>
+           <LinearLayout
+               android:clickable="false"
+               android:orientation="vertical"
+               style="@style/mid_layout">
+               <TextView style="@style/usertext"
+                   android:text="@string/doexplain" />
+             <TextView
+                 android:textSize="13sp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:text="@string/explainone" />
+           </LinearLayout>
+           <View style="@style/bg_line"/>
+           <LinearLayout
+               android:id="@+id/ll_searchsblist"
+               style="@style/mid_layout">
+             <TextView style="@style/usertext"
+                android:text="@string/searchequipment" />
+               <TextView
+                   android:id="@+id/searchsblist"
+                   style="@style/right_layout"
+                   android:text="@string/searchequipment" />
+               <ImageView style="@style/img_arrow"/>
+           </LinearLayout>
+           <View style="@style/bg_line"/>
+           <LinearLayout
+               android:id="@+id/ll_mearchssblist"
+               style="@style/bottom_layout"
+               >
+             <TextView style="@style/usertext"
+                android:text="@string/matchessb" />
+               <TextView
+                   android:id="@+id/mearchssblist"
+                   style="@style/right_layout"
+                   android:text="@string/matchessb" />
+               <ImageView style="@style/img_arrow"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:gravity="center_horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <Button
+                       android:textSize="14sp"
+                       android:id="@+id/btn_searchsb"
+                       android:layout_marginRight="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/searchsbs"/>
+                   <Button
+                       android:textSize="14sp"
+                       android:id="@+id/btn_communication"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/communication"/>
+               </LinearLayout>
+             </LinearLayout>
+          </LinearLayout>
+
+<!--监测设备1的安装与调试 -->
+        <LinearLayout style="@style/wrap_layout" >
+            <LinearLayout style="@style/top_layout">
+                <TextView style="@style/biaotitext"
+                    android:text="@string/jcsbo_azts" />
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:clickable="false"
+                android:orientation="vertical"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/doexplain" />
+                <TextView android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/explaintwo" />
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_insatllstate"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/installstate" />
+                <TextView
+                    android:id="@+id/insatllstate"
+                    style="@style/right_layout"
+                    android:text="@string/installstate_noinsta" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_qzj_name"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/qzjname" />
+                <TextView
+                    android:id="@+id/qzj_name"
+                    android:text="300吨履带吊"
+                    style="@style/right_layout" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_qzj_drivername"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/qzjdriver" />
+                <TextView
+                    android:id="@+id/qzj_drivername"
+                    android:text="张三"
+                    style="@style/right_layout" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_install_location"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/installlocation" />
+                <TextView
+                    android:id="@+id/install_location"
+                    style="@style/right_layout"
+                    android:text="@string/friverright"/>
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_edit_goushenkey"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/goushenkey" />
+                <TextView
+                  android:id="@+id/edit_goushenkey"
+                    android:text="3"
+                    style="@style/right_layout"/>
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:clickable="false"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/calibrationdata" />
+                <TextView
+                    android:text="Roll："
+                    style="@style/right_layout"
+                    />
+                <TextView
+                    android:id="@+id/calibrationkey_roll"
+                    android:text="0.0"
+                    style="@style/right_layout"
+                    />
+                <TextView
+                    android:text="Pitch："
+                    style="@style/right_layout"
+                    />
+                <TextView
+                    android:id="@+id/calibrationkey_pitch"
+                    android:text="0.0"
+                    style="@style/right_layout"
+                    />
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:clickable="false"
+                style="@style/bottom_layout">
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_communicationceshi"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/communication"/>
+                    <Button
+                        android:id="@+id/btn_datajioazhun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/datacalibra"/>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+
+<!--监测设备2的安装与调试-->
+            <LinearLayout style="@style/wrap_layout" >
+                <LinearLayout style="@style/top_layout">
+                    <TextView style="@style/biaotitext"
+                        android:text="@string/jcsbt_azts" />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:clickable="false"
+                    android:orientation="vertical"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/doexplain" />
+                      <TextView
+                         android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/explainthree"
+                          />
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_two_stateInsatll"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/installstate" />
+                    <TextView
+                        android:id="@+id/two_stateInsatll"
+                        style="@style/right_layout"
+                        android:text="@string/installstate_noinsta"/>
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_two_qzj_name"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/qzjname" />
+                    <TextView
+                        android:id="@+id/two_qzj_name"
+                        android:text="600吨抬吊"
+                        style="@style/right_layout"/>
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_two_qzj_drivername"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/qzjdriver" />
+                    <TextView
+                        android:id="@+id/two_qzj_drivername"
+                        android:text="李四"
+                        style="@style/right_layout"
+                        />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_two_installLocation"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/installlocation" />
+                    <TextView
+                        android:id="@+id/two_installLocation"
+                        android:text="@string/friverright"
+                       style="@style/right_layout" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:id="@+id/ll_two_goushenkey"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/goushenkey" />
+                    <TextView
+                        android:id="@+id/two_goushenkey"
+                     style="@style/right_layout"
+                        android:text="2"/>
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:clickable="false"
+                    style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:text="@string/calibrationdata" />
+                    <TextView
+                      android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll："/>
+                    <TextView
+                        android:id="@+id/two_calibrationkey_roll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pitch："/>
+                    <TextView
+                        android:id="@+id/two_calibrationkey_pitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout
+                    android:clickable="false"
+                    style="@style/bottom_layout">
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_two_communicationceshi"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/communication"/>
+                        <Button
+                            android:id="@+id/btn_two_datajioazhun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/datacalibra"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--最底部分-->
+
+            <LinearLayout
+                style="@style/wrap_layout">
+                <LinearLayout
+                    android:id="@+id/ll_saveFile"
+                    style="@style/single_layout">
+                    <TextView style="@style/usertext" android:text="@string/createnewfile"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+            <LinearLayout style="@style/top_layout">
+                <TextView
+                    style="@style/biaotitext"
+                    android:text="@string/passmanage" />
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_alter_shouquanpass"
+                style="@style/mid_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/alertdopeople" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_alter_superpass"
+                style="@style/bottom_layout">
+                <TextView style="@style/usertext"
+                    android:text="@string/alertshoupeople" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+            </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+</LinearLayout>

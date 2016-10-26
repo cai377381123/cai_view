@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">双机抬吊智能监控系统</string>
+
+    <!--主页面按钮-->
+    <string name="home_setting">抬吊作业参数设置</string>
+    <string name="home_monitor">抬吊作业安全监测</string>
+    <string name="home_help">使用帮助</string>
+
+    <string name="btn_over_name">退出</string>
+
+    <string name="tdt_setafile">抬吊作业参数设置及监测数据文件</string>
+    <string name="cs_accredit">参数设置授权状态</string>
+    <string name="weishouquan">未授权</string>
+    <string name="yishouquan">已授权</string>
+    <string name="fileslist">文件列表</string>
+    <string name="nowfile">选择配置文件</string>
+    <string name="nowfilename">当前还没有配置文件</string>
+
+    <string name="jianceshebei_one_name">监测设备1</string>
+    <string name="jianceshebei_two_name">监测设备2</string>
+
+    <string name="tdt_info">抬吊作业基本信息</string>
+    <string name="pjname">项目名称</string>
+    <string name="install_sb">设备安装、参数设置、作业指挥</string>
+    <string name="dopeople">执行人</string>
+    <string name="shoupeople">授权人</string>
+    <string name="hoistcase">抬吊工况</string>
+    <string name="doublehoist">双机抬吊</string>
+    <string name="singlehoist">单机抬吊</string>
+    <string name="safemonitor">抬吊作业安全监测类型</string>
+    <string name="allmonitor">实时监测</string>
+    <string name="frequencymonitor">实时监测频率</string>
+    <string name="frequency">1s</string>
+    <string name="monitorfrequency">监测频率</string>
+
+    <string name="wxcs_azts">无线传输控制器的安装与调试</string>
+    <string name="doexplain">操作说明:</string>
+    <string name="explainone">\t\t操作之前，请接通无线传输控制器电源，且电池电量充足。点击【搜索蓝牙设备】，在【已搜索到设备】中，上下翻动找到HC开头的设备并点击进行配对，在【已配对的设备】中，找到HC开头的设备，点击进行蓝牙连接。点击【通信测试】，检查手机与无线传输控制器通信是否成功。</string>
+    <string name="searchequipment">已搜索到设备</string>
+    <string name="matchessb">已配对的设备</string>
+    <string name="searchsbs">搜索蓝牙设备</string>
+
+
+    <string name="jcsbo_azts">监测设备1的安装与调试</string>
+    <string name="explaintwo">\t\t操作之前，请确认无线传输控制器已上电且已调试成功，监测设备1已上电。\n
+\t\t特别强调：安装位置的参数设置必须与实际的安装情况一致！只要传感器重新安装或安装发生变化，则必须进行数据校准！只有在钩绳自然悬垂不动时，才能进行数据校准操作。只有通信测试成功后，才能进行数据校准。</string>
+    <string name="installstate">安装状态</string>
+    <string name="installstate_insta">安装</string>
+    <string name="installstate_noinsta">未安装</string>
+    <string name="install">安装</string>
+    <string name="qzjname">起重机名称</string>
+    <string name="qzjdriver">起重机司机</string>
+    <string name="installlocation">安装位置</string>
+    <string name="friverright">司机右手方向</string>
+    <string name="goushenkey">钩绳-铅垂线偏离夹角报警值（度）</string>
+    <string name="calibrationdata">校准数据</string>
+    <string name="communication">通信测试</string>
+    <string name="datacalibra">数据校准</string>
+
+
+
+    <string name="jcsbt_azts">监测设备2的安装与调试</string>
+    <string name="explainthree">\t\t操作之前，请确认无线传输控制器已上电且已调试成功，监测设备2已上电。\n
+\t\t特别强调：安装位置的参数设置必须与实际的安装情况一致！只要传感器重新安装或安装发生变化，则必须进行数据校准！只有在钩绳自然悬垂不动时，才能进行数据校准操作。只有通信测试成功后，才能进行数据校准。</string>
+
+    <string name="qzjname_two">起重机名称</string>
+    <string name="qzjdriver_two">起重机司机</string>
+    <string name="goushenkey_two">钩绳-铅垂线偏离夹角报警值（度）</string>
+    <string name="createnewfile">新建文件，保存以上所有参数设置</string>
+
+
+    <string name="passmanage">密码管理</string>
+    <string name="alertdopeople">修改执行人参数设置授权密码</string>
+    <string name="alertshoupeople">修改授权人超级管理密码</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="device_name_default">设备名称</string>
+    <string name="receive_byte">接收字节：</string>
+    <string name="data_format_default">Ascii</string>
+    <string name="data_format_hex">十六进制</string>
+    <string name="clean">清空</string>
+    <string name="send_byte">发送字节：</string>
+    <string name="send">发送</string>
+    <string name="scan_ble_device">搜索蓝牙设备</string>
+    <string name="device_name">名称</string>
+    <string name="device_address">地址</string>
+    <string name="scanning">正在搜索...</string>
+    <string name="disconnect">断开连接</string>
+    <string name="zero">0</string>
+
+</resources>

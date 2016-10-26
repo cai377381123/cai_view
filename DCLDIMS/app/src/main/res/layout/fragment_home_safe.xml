@@ -1,0 +1,316 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.nuc.csce.dcldims.fragment.Home_safe"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_safe_one_jcsb_name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="监测设备1的名称"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钩绳-铅垂线偏离夹角报警值（度）："/>
+                <TextView
+                    android:id="@+id/home_safe_one_goushenkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8度"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钩绳-铅垂线偏离夹角："/>
+                    <TextView
+                        android:id="@+id/home_safe_one_goushen_pljj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"/>
+
+                 </LinearLayout>
+                <cn.edu.nuc.csce.dcldims.view.PianlijiaoView
+                    android:id="@+id/one_pianlijiao_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="钩绳-铅垂线偏离方位"/>
+                <cn.edu.nuc.csce.dcldims.view.PianlifangweiView
+                    android:id="@+id/one_pianlifangwei_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="监测设备电量："/>
+                    <TextView
+                        android:id="@+id/home_safe_one_jcsb_dianliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_safe_two_jcsb_name"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="监测设备2的名称"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钩绳-铅垂线偏离夹角报警值（度）："/>
+                    <TextView
+                        android:id="@+id/home_safe_two_goushenkey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3度"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钩绳-铅垂线偏离夹角："/>
+                <TextView
+                    android:id="@+id/home_safe_two_goushen_pljj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"/>
+            </LinearLayout>
+            <cn.edu.nuc.csce.dcldims.view.Pianlijiao2View
+                android:id="@+id/two_pianlijiao_view"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="钩绳-铅垂线偏离方位"/>
+
+            <cn.edu.nuc.csce.dcldims.view.Pianlifangwei2View
+                android:id="@+id/two_pianlifangwei_view"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监测设备电量："/>
+                <TextView
+                    android:id="@+id/home_safe_two_jcsb_dianliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"/>
+            </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无线传输控制器电量："/>
+        <TextView
+            android:id="@+id/home_safe_two_wxcskzq_dianliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"/>
+    </LinearLayout>
+
+
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/ll_btn_control"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_control_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始"
+                />
+            <Button
+                android:id="@+id/btn_control_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂停"
+                />
+            <Button
+                android:id="@+id/btn_control_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止"
+                />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/btn_home_safe_jclx"
+            style="@style/mid_layout"
+            android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                      android:text="监测类型" />
+            <TextView
+                android:id="@+id/home_safe_jclx"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginRight="5dp"
+                android:text="暂停监测"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:id="@+id/btn_home_safe_jcpl"
+            style="@style/mid_layout"
+            android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                      android:text="@string/monitorfrequency" />
+            <TextView
+                android:id="@+id/home_safe_jcpl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginRight="5dp"
+                android:text="@string/frequency"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            style="@style/mid_layout"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView style="@style/usertext"
+                      android:text="提示信息" />
+            <TextView
+                android:id="@+id/home_safe_tishi_message"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="13sp"
+                android:textColor="#DC143C"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="请先创建《抬吊作业参数设置及监测数据文件》 ！"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<!--
+            <TextMoveLayout
+                android:id="@+id/move_textLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+                -->
+
+            <SeekBar
+                android:id="@+id/seekbar_huifang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/seekbar_thumb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_shipin_fuwei"
+                    android:text="复位"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+               <Button
+                   android:id="@+id/btn_kaishi_zanting"
+                   android:text="开始"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_huifangfiles_listview"
+            style="@style/bottom_layout"
+            android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                android:text="选择监测文件" />
+            <TextView
+                style="@style/right_layout"
+                android:id="@+id/huifangfiles_listview"
+                android:text="@string/nowfilename"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

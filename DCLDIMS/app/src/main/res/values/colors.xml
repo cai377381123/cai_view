@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B050</color>
+    <color name="colorPrimaryDark">#00B050</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#00B050</color>
+    <color name="bottom_bg">#E3E3E5</color>
+    <color name="white">#fff</color>
+    <color name="blue">#3A73D3</color>
+    <color name="black">#000000</color>
+</resources>
